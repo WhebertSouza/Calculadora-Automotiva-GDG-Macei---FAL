@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.whebertsilva.consumokml.MainActivity">
+
+
+        <TextView
+            style="@style/Text_titulo_view"
+            android:text="Qual o consumo KM/L do seu veículo" />
+
+        <EditText
+            android:id="@+id/edt_media4_consumo"
+            style="@style/Edt_Text" />
+
+        <TextView
+            style="@style/Text_titulo_view"
+            android:layout_marginTop="8dp"
+            android:text="Quantos Km irá percorrer" />
+
+        <EditText
+            android:id="@+id/edt_media4_kmPercorrer"
+            style="@style/Edt_Text"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/text_Media4_consumo"
+            style="@style/Text_calculo" />
+
+        <Button
+            android:id="@+id/button_media4_calcular"
+            style="@style/BotoesPrimeiraTela"
+            android:layout_marginTop="12dp"
+            android:onClick="clickCalcular"
+            android:text="Calcular" />
+
+        <Button
+            android:id="@+id/button_media4_limpar"
+            style="@style/BotoesPrimeiraTela"
+            android:layout_marginTop="8dp"
+            android:onClick="clickLimpar"
+            android:text="Limpar" />
+
+        <Button
+            android:id="@+id/button_media4_voltar"
+            style="@style/BotoesPrimeiraTela"
+            android:layout_marginTop="8dp"
+            android:onClick="clickVoltar"
+            android:text="Voltar" />
+
+    </LinearLayout>
+
+</ScrollView>
